@@ -54,3 +54,5 @@ Bu dosya, â€œCyber Zombie Assetsâ€ projesindeki her alt dosyanÄ±n (So
 
 <!-- AUTO-END -->
 
+
+[21.10.2025 15:15] **Deneme-006.md** oluÅŸturuldu (Durum: Taslak)
