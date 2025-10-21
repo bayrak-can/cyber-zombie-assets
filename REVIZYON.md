@@ -24,3 +24,5 @@ Bu dosya, “Cyber Zombie Assets” projesindeki her alt dosyanın (Soru, Deneme
 - “🧩” = yeni başlatıldı  
 - “❌” = iptal edildi veya kullanılmıyor  
 - Her commit sonrası ilgili satırı manuel olarak güncelle.
+
+- [21.10.2025 12:03] **Soru-004.md** oluşturuldu (Durum: Taslak)
