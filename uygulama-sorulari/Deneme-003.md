@@ -1,20 +1,25 @@
-# Deneme 003 – Kısa video gelir modeli denemesi
+# Deneme 003 — Kısa başlık
+
+## Konu
+(Örnek) Instagram Reels ile kısa içerik denemesi.
 
 ## Amaç
-Soru-03’teki kısa video fikrini pratikte test etmek:  
-3 farklı niş seçilerek (örneğin pratik ipuçları, ofis verimliliği, tech notları),  
-her biri için 1 kısa video (30–45 sn) konsepti üretmek.
+- Temel akışı denemek: fikir → deneme → gözlem.
 
-## Adımlar
-1. Her niş için 3 kısa fikir yaz.  
-2. En uygulanabilir 1’er tanesini seç (toplam 3 video konsepti).  
-3. Metin → video dönüşüm araçlarını dene (örneğin: Pictory, Veed.io, CapCut).  
-4. Her bir videoyu sadece taslak olarak üret (yayın yok).
+## Varsayımlar / Kısıtlar
+- Haftada 3 video üretilebilir.
+- Başlangıç bütçesi: 0 TL (sadece zaman).
 
 ## Notlar
-- Telifli sesleri kullanma.  
-- Basit altyazı veya otomatik jeneratörleri dene.  
-- Gözlemler “Gözlem-003.md” dosyasında raporlanacak.
+- Hangi niş alan? (ör: pratik tüyolar)
+- Ses/altyazı otomasyonu araştır.
+- Telifli müzikten kaçın.
+
+## Yapılacaklar
+- [ ] 3 niş örneği çıkar
+- [ ] İlk 5 video konusu belirle
+- [ ] Yayın akışını planla
 
 ## Durum
-Hazırlanıyor
+Taslak
+
