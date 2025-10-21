@@ -28,3 +28,5 @@ Bu dosya, “Cyber Zombie Assets” projesindeki her alt dosyanın (Soru, Deneme
 - [21.10.2025 12:03] **Soru-004.md** oluşturuldu (Durum: Taslak)
 
 [21.10.2025 12:40] **Deneme-004.md** oluşturuldu (Durum: Taslak)
+
+[21.10.2025 13:03] **Deneme-005.md** oluşturuldu (Durum: Taslak)
