@@ -32,8 +32,14 @@ Bu dosya, â€œCyber Zombie Assetsâ€ projesindeki her alt dosyanÄ±n (So
 [21.10.2025 13:03] **Deneme-005.md** oluÅŸturuldu (Durum: Taslak)
 [21.10.2025 13:16] **Gozlem-001.md** oluÅŸturuldu (Durum: Taslak)
 
+
+
+
+[21.10.2025 15:15] **Deneme-006.md** oluÅŸturuldu (Durum: Taslak)
+[21.10.2025 15:49] **Gozlem-002.md** oluÅŸturuldu (Durum: Taslak)
+
 <!-- AUTO-START -->
-## Otomatik Ozet â€” 21.10.2025 13:54
+## Otomatik Ozet â€” 22.10.2025 09:40
 
 ### Sorular
 - Soru-004.md
@@ -43,6 +49,7 @@ Bu dosya, â€œCyber Zombie Assetsâ€ projesindeki her alt dosyanÄ±n (So
 
 ### Gozlemler
 - Gozlem-001.md
+- Gozlem-002.md
 
 ### Denemeler
 - Deneme-001.md
@@ -50,10 +57,8 @@ Bu dosya, â€œCyber Zombie Assetsâ€ projesindeki her alt dosyanÄ±n (So
 - Deneme-003.md
 - Deneme-004.md
 - Deneme-005.md
+- Deneme-006.md
 - deneme-sablon.md
 
 <!-- AUTO-END -->
 
-
-[21.10.2025 15:15] **Deneme-006.md** oluÅŸturuldu (Durum: Taslak)
-[21.10.2025 15:49] **Gozlem-002.md** oluÅŸturuldu (Durum: Taslak)
