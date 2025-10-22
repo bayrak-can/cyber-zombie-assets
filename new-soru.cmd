@@ -1,11 +1,32 @@
 @echo off
 setlocal
-REM Bu .bat hangi klasördeyse oraya geç
-cd /d "%~dp0"
 
-set /p NO=Olusturulacak Soru numarasi (ornegin 008):
+REM Zaman damgasi (yyyy-MM-dd_HHmmss)
+for /f %%i in ('powershell -NoP -C "Get-Date -Format yyyy-MM-dd_HHmmss"') do set TS=%%i
 
-"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\new-soru.ps1" %NO%
+set /p TITLE=Baslik (kisa): 
+if "%TITLE%"=="" set "TITLE=Yeni Soru"
 
+REM Dosya adi icin bosluklari - yap
+set "SAFE=%TITLE: =-%"
+
+REM Hedef klasor
+set "DIR=uygulama-soruları"
+if not exist "%DIR%" mkdir "%DIR%"
+
+set "FILE=%DIR%\%TS%_%SAFE%.md"
+
+(
+  echo # %TITLE%
+  echo
+  echo ## Notlar
+  echo - [ ] Yapilacak 1
+  echo - [ ] Yapilacak 2
+  echo
+) > "%FILE%"
+
+REM VS Code'da ac (code yoksa hata verme)
+code -r "%FILE%" 2>nul
+
+echo Olusturuldu: %FILE%
 endlocal
-pause
