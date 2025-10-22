@@ -62,3 +62,11 @@ Bu dosya, â€œCyber Zombie Assetsâ€ projesindeki her alt dosyanÄ±n (So
 
 <!-- AUTO-END -->
 
+
+- [22.10.2025 10:38] **Soru-008.md** oluÅŸturuldu (Durum: Taslak)
+
+- [22.10.2025 10:39] **Soru-008.md** oluÅŸturuldu (Durum: Taslak)
+
+- [22.10.2025 11:42] **Soru-./new-soru.cmd.md** oluÅŸturuldu (Durum: Taslak)
+2025-10-22 11:51 - Deneme-009 olusturuldu: uygulama-sorulari/Deneme-009/Deneme-009.md
+2025-10-22 11:57 - Deneme-010 olusturuldu: uygulama-sorulari/Deneme-010/Deneme-010.md

@@ -1,35 +1,49 @@
-param([Parameter(Mandatory=$true)][string]$No)
+param(
+  [Parameter(Mandatory=$false)][string]$No
+)
 
-$root = Split-Path -Parent $MyInvocation.MyCommand.Path | Split-Path -Parent
-$folder = Join-Path $root "para-kazanma-yollari"
-$file = Join-Path $folder ("Soru-{0}.md" -f $No)
+# Klasörler
+$scriptDir  = Split-Path -Parent $MyInvocation.MyCommand.Path
+$projectDir = Split-Path -Parent $scriptDir
 
+if (-not $No -or $No -eq "") {
+  Write-Host "Soru numarasi gelmedi. Ornek: 009"
+  exit 1
+}
+
+# Hedef: uygulama-sorulari/Deneme-XXX/Deneme-XXX.md
+$targetBase = Join-Path $projectDir 'uygulama-sorulari'
+if (-not (Test-Path $targetBase)) {
+  New-Item -ItemType Directory -Path $targetBase | Out-Null
+}
+
+$folderName = "Deneme-$No"
+$targetDir  = Join-Path $targetBase $folderName
+New-Item -ItemType Directory -Force -Path $targetDir | Out-Null
+
+$mdPath = Join-Path $targetDir ("Deneme-$No.md")
+
+# İçerik
+$now = Get-Date -Format 'yyyy-MM-dd HH:mm'
 $content = @"
-# Soru $No – Başlık
+# Deneme $No
+Tarih: $now
 
-## Konu
-(Kısa özet: Soru neyle ilgili? Amaç nedir?)
+## Amaç
+(Bu denemenin amacini yaz)
 
-## Varsayımlar / Kısıtlar
-- …
-- …
-
-## Notlar
-- …
-- …
-
-## Yapılacaklar
+## Adımlar
 - [ ] Adım 1
 - [ ] Adım 2
 
-## Durum
-Taslak
+## Notlar
+-
 "@
+Set-Content -Path $mdPath -Value $content -Encoding UTF8
 
-Set-Content -Path $file -Value $content -Encoding UTF8
+# REVIZYON kaydı
+$revPath = Join-Path $projectDir 'REVIZYON.md'
+$revLine = "$($now) - Deneme-$No olusturuldu: uygulama-sorulari/$folderName/Deneme-$No.md"
+Add-Content -Path $revPath -Value $revLine -Encoding UTF8
 
-# REVIZYON.md günlüğüne kayıt
-$rev = Join-Path $root "REVIZYON.md"
-$stamp = (Get-Date -Format "dd.MM.yyyy HH:mm")
-Add-Content $rev "`n- [$stamp] **Soru-$No.md** oluşturuldu (Durum: Taslak)"
-Write-Host "Soru-$No.md oluşturuldu ve REVIZYON.md güncellendi." -ForegroundColor Green
+Write-Host "Olusturuldu: $mdPath"
