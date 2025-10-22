@@ -19,4 +19,4 @@ git push origin main
 echo.
 echo ✅ Yedekleme tamamlandı!
 pause
-Deneme-010 kaydedildi
+
