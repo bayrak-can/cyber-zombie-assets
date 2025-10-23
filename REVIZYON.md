@@ -38,8 +38,19 @@ Bu dosya, â€œCyber Zombie Assetsâ€ projesindeki her alt dosyanÄ±n (So
 [21.10.2025 15:15] **Deneme-006.md** oluÅŸturuldu (Durum: Taslak)
 [21.10.2025 15:49] **Gozlem-002.md** oluÅŸturuldu (Durum: Taslak)
 
+
+
+
+- [22.10.2025 10:38] **Soru-008.md** oluÅŸturuldu (Durum: Taslak)
+
+- [22.10.2025 10:39] **Soru-008.md** oluÅŸturuldu (Durum: Taslak)
+
+- [22.10.2025 11:42] **Soru-./new-soru.cmd.md** oluÅŸturuldu (Durum: Taslak)
+2025-10-22 11:51 - Deneme-009 olusturuldu: uygulama-sorulari/Deneme-009/Deneme-009.md
+2025-10-22 11:57 - Deneme-010 olusturuldu: uygulama-sorulari/Deneme-010/Deneme-010.md
+
 <!-- AUTO-START -->
-## Otomatik Ozet â€” 22.10.2025 09:40
+## Otomatik Ozet â€” 23.10.2025 11:29
 
 ### Sorular
 - Soru-004.md
@@ -58,15 +69,8 @@ Bu dosya, â€œCyber Zombie Assetsâ€ projesindeki her alt dosyanÄ±n (So
 - Deneme-004.md
 - Deneme-005.md
 - Deneme-006.md
+- Deneme-008.md
 - deneme-sablon.md
 
 <!-- AUTO-END -->
 
-
-- [22.10.2025 10:38] **Soru-008.md** oluÅŸturuldu (Durum: Taslak)
-
-- [22.10.2025 10:39] **Soru-008.md** oluÅŸturuldu (Durum: Taslak)
-
-- [22.10.2025 11:42] **Soru-./new-soru.cmd.md** oluÅŸturuldu (Durum: Taslak)
-2025-10-22 11:51 - Deneme-009 olusturuldu: uygulama-sorulari/Deneme-009/Deneme-009.md
-2025-10-22 11:57 - Deneme-010 olusturuldu: uygulama-sorulari/Deneme-010/Deneme-010.md
