@@ -1,32 +1,26 @@
 @echo off
-setlocal
+setlocal enabledelayedexpansion
 
-REM Zaman damgasi (yyyy-MM-dd_HHmmss)
-for /f %%i in ('powershell -NoP -C "Get-Date -Format yyyy-MM-dd_HHmmss"') do set TS=%%i
+:: Kullanıcıdan başlık al
+set /p "title=Başlık (kısa): "
 
-set /p TITLE=Baslik (kisa): 
-if "%TITLE%"=="" set "TITLE=Yeni Soru"
+:: Tarih ve saat değişkenleri
+for /f "tokens=2 delims==" %%i in ('wmic os get localdatetime /value') do set datetime=%%i
+set datestamp=!datetime:~0,4!-!datetime:~4,2!-!datetime:~6,2!_!datetime:~8,2!!datetime:~10,2!!datetime:~12,2!
 
-REM Dosya adi icin bosluklari - yap
-set "SAFE=%TITLE: =-%"
+:: Dosya adı
+set filename=uygulama-sorulari\!datestamp!_%title%.md
 
-REM Hedef klasor
-set "DIR=uygulama-soruları"
-if not exist "%DIR%" mkdir "%DIR%"
+:: Dosya oluştur
+echo # %title%> "!filename!"
+echo 📅 Tarih: %date% – %time:~0,5%>> "!filename!"
+echo 🧩 Konu: %title%>> "!filename!"
+echo.>> "!filename!"
+echo ## Notlar>> "!filename!"
+echo - [ ] Yapılacak 1>> "!filename!"
+echo - [ ] Yapılacak 2>> "!filename!"
 
-set "FILE=%DIR%\%TS%_%SAFE%.md"
+echo.
+echo ✅ Dosya oluşturuldu: !filename!
 
-(
-  echo # %TITLE%
-  echo
-  echo ## Notlar
-  echo - [ ] Yapilacak 1
-  echo - [ ] Yapilacak 2
-  echo
-) > "%FILE%"
-
-REM VS Code'da ac (code yoksa hata verme)
-code -r "%FILE%" 2>nul
-
-echo Olusturuldu: %FILE%
-endlocal
+pause
