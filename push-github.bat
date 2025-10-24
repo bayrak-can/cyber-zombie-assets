@@ -1,22 +1,22 @@
 @echo off
+setlocal enableextensions
 cd /d "%~dp0"
-echo.
-echo [1/3] Değişiklikler hazırlanıyor...
-git add .
+chcp 65001 >NUL
 
-echo.
-set /p MSG="Commit mesajı (örn: Otomatik yedek): "
+rem ▼ Otomatik commit mesajı
+set "MSG=OPS: %DATE% %TIME% otomatik push"
 
-if "%MSG%"=="" set MSG=Otomatik yedek
+rem ▼ Değişiklik yoksa çık
+git add -A
+git diff --cached --quiet && (
+  echo [Push] Commitlenecek degisiklik bulunamadi. 
+  goto :eof
+)
 
-echo [2/3] Commit oluşturuluyor...
-git commit -m "%MSG%"
-
-echo.
-echo [3/3] GitHub'a gönderiliyor...
+rem ▼ Commit + rebase pull + push
+git commit -m "%MSG%" >NUL
+git pull --rebase origin main >NUL 2>&1
 git push origin main
 
-echo.
-echo ✅ Yedekleme tamamlandı!
-pause
-
+echo [Push] GitHub'a gonderildi.
+endlocal

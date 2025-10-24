@@ -1,0 +1,9 @@
+﻿{
+  "ops": [
+    {
+      "type": "new-deneme",
+      "name": "Deneme-TEST",
+      "body": "# Deneme TEST\nBu dosya otomatik oluşturuldu.\n\n- [ ] Adım 1\n- [ ] Adım 2"
+    }
+  ]
+}
