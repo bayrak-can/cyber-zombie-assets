@@ -80,3 +80,5 @@ Bu dosya, â€œCyber Zombie Assetsâ€ projesindeki her alt dosyanÄ±n (So
 - Deneme-010 eklendi (AI-Inbox).
 
 - Deneme-011 eklendi (AI-Inbox, hotkey).
+
+- Deneme-013 eklendi (otomatik push).

@@ -1,0 +1,4 @@
+﻿[
+  {"type":"write","path":"uygulama-sorulari/Deneme-013.md","content":"# Deneme 013\nBu push otomatik testidir."},
+  {"type":"append","path":"REVIZYON.md","content":"- Deneme-013 eklendi (otomatik push)."}
+]
