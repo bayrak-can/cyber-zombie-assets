@@ -1,0 +1,6 @@
+﻿[
+  { "type": "write",  "path": "uygulama-sorulari/Deneme-011.md",
+    "content": "# Deneme 011\nBu dosya Ctrl+Alt+S ile AI-Inbox'a kaydedildi.\n" },
+  { "type": "append", "path": "REVIZYON.md",
+    "content": "- Deneme-011 eklendi (AI-Inbox, hotkey)." }
+]
